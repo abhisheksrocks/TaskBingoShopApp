@@ -24,12 +24,13 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(
           create: (_) => locator<LoginBloc>()
-            ..add(
-              const LoginUser(
-                username: 'hello@api.com',
-                password: 'NotsoSecure1#',
-              ),
-            ),
+          // ..add(
+          //   const LoginUser(
+          //     username: 'hello@api.com',
+          //     password: 'NotsoSecure1#',
+          //   ),
+          // )
+          ,
           lazy: false,
         ),
         BlocProvider(
